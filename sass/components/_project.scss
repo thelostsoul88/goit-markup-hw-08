@@ -1,0 +1,33 @@
+.project {
+  padding-top: 0;
+  @include media-max(1200px) {
+    display: none;
+  }
+}
+
+.project__title {
+  margin-bottom: 50px;
+}
+
+.project__container {
+  position: relative;
+}
+
+.project__txt {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  width: 370px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.project__item {
+  width: calc((100% - 60px) / 3);
+}

@@ -1,0 +1,30 @@
+//base/utils
+@import './utils/variables.scss';
+@import './utils/mixin';
+@import './base/reset';
+@import './base/base.scss';
+@import './utils/hidden';
+@import './base/container';
+@import './base/section';
+@import './utils/placeholders';
+@import './utils/style--title';
+@import './utils/primary--list';
+@import './utils/contact--list';
+
+//components
+@import './components/header';
+@import './components/hero';
+@import './components/features';
+@import './components/project';
+@import './components/team';
+@import './components/team-contacts';
+@import './components/clients';
+@import './components/footer';
+@import './components/footer-join';
+@import './components/footer-mailing';
+@import './components/portfolio-btn';
+@import './components/portfolio-cards';
+@import './components/modal';
+@import './components/modal-text';
+@import './components/modal-inputs';
+@import './components/modal-btn';

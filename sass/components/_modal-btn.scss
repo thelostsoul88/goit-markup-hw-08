@@ -1,0 +1,36 @@
+.modal__btn-close {
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  @extend %flex-jc-ac;
+}
+.register__btn-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: block;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: 0px;
+  transition-property: background-color, box-shadow;
+  @extend %animation;
+  padding: 10px 52px;
+  margin: 0 auto;
+  &:hover {
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &:focus {
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

@@ -1,0 +1,37 @@
+.join {
+  max-width: 206px;
+  max-height: 80px;
+  margin-left: 70px;
+  margin-right: 93px;
+}
+.join__name {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.join__list {
+  .join__link {
+    &:hover {
+      background-color: var(--accent-color);
+    }
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+}
+.join__link {
+  background: rgba(255, 255, 255, 0.1);
+  @extend %flex-jc-ac;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  transition-property: background-color;
+  @extend %animation;
+}
+.join__icon {
+  fill: var(--primary-white-color);
+}

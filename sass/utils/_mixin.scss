@@ -1,0 +1,21 @@
+@mixin calc($count) {
+  width: calc((100% - 30px * ($count - 1)) / $count);
+}
+
+@mixin media-min($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-max($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-min-max($size-min, $size-max) {
+  @media screen and (min-width: $size-min) and (max-width: $size-max) {
+    @content;
+  }
+}

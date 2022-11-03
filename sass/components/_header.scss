@@ -1,0 +1,144 @@
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  @extend %flex-jc-ac;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  span {
+    color: var(--primary-black-color);
+  }
+}
+
+.nav {
+  @extend %flex-jc-ac;
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__list {
+  .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    @extend %animation;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav__list {
+  .link {
+    &:hover {
+      color: var(--accent-color);
+    }
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.nav__item {
+  position: relative;
+}
+
+.current {
+  &::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: -1px;
+  }
+}
+
+.header {
+  .current {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__list {
+  @extend %flex-jc-ac;
+  gap: 50px;
+}
+
+.link {
+  &:hover {
+    .contacts__icon {
+      fill: currentColor;
+    }
+  }
+  &:focus {
+    .contacts__icon {
+      fill: currentColor;
+    }
+  }
+}
+.contacts__link {
+  .contacts__icon {
+    fill: var(--title-color);
+    margin-right: 10px;
+    transition-property: fill;
+    @extend %animation;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts__list {
+  .link {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    @extend %animation;
+    &:hover {
+      color: var(--accent-color);
+    }
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
