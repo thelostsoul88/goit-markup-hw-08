@@ -1,6 +1,6 @@
 .project {
   padding-top: 0;
-  @include media-max(1200px) {
+  @include media-max(1199px) {
     display: none;
   }
 }
