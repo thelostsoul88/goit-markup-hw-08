@@ -1057,8 +1057,7 @@ address .link:focus {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-height: 609px;
   top: 50%;
   left: 50%;
   background: var(--primary-white-color);
@@ -1072,6 +1071,16 @@ address .link:focus {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   padding: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1089,8 +1098,14 @@ address .link:focus {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal__name {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .register__label {
@@ -1221,10 +1236,29 @@ address .link:focus {
   fill: var(--accent-color);
 }
 
+.register__txt-sbmt {
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .register__txt-sbmt {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
 .register__checkbox-link {
+  font-size: 12px;
+  line-height: 1.1666666667;
   margin-left: 0.3em;
   color: var(--button-color);
   text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .register__checkbox-link {
+    font-size: 14px;
+    line-height: 2;
+  }
 }
 
 .register__checkbox-icon {

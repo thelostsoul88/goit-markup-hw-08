@@ -91,10 +91,26 @@
     }
   }
 }
+
+.register__txt-sbmt {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  @include media-min(1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 12);
+  }
+}
+
 .register__checkbox-link {
+  font-size: 12px;
+  line-height: calc(14 / 12);
   margin-left: 0.3em;
   color: var(--button-color);
   text-decoration: underline;
+  @include media-min(1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 12);
+  }
 }
 .register__checkbox-icon {
   margin-right: 8px;
