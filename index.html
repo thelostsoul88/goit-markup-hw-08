@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a href="./index.html" lang="en" class="logo link">Web<span>Studio</span></a>
+          <a href="./index.html" lang="en" class="logo link"
+            >Web<span>Studio</span></a
+          >
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="link current nav__link" href="./index.html">Студія</a>
@@ -38,14 +40,19 @@
         <div class="contacts">
           <ul class="contacts__list list">
             <li class="contacts__item">
-              <a lang="en" href="mailto:info@devstudio.com" class="link contacts__link"
+              <a
+                lang="en"
+                href="mailto:info@devstudio.com"
+                class="link contacts__link header__mail"
                 ><svg class="contacts__icon" width="16" height="12">
                   <use href="./img/icons.svg#icon-mail-top"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li class="contacts__item">
-              <a href="tel:+380961111111" class="link contacts__link"
+              <a
+                href="tel:+380961111111"
+                class="link contacts__link header__tel"
                 ><svg class="contacts__icon" width="10" height="16">
                   <use href="./img/icons.svg#icon-smartphone-top"></use>
                 </svg>
@@ -54,8 +61,18 @@
             </li>
           </ul>
         </div>
+        <button
+          type="button"
+          class="menu__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="../img/icons.svg#open-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- ---------------------------------------------HERO---------------------------------------------------- -->
       <section class="hero section">
@@ -664,6 +681,53 @@
         </form>
       </div>
     </div>
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="/img/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="menu__list-nav list">
+        <li class="menu__item current">
+          <a class="link current menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__list-contacts">
+        <li class="menu__item">
+          <a class="link menu__contacts-tel" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="menu__item">
+          <a class="link menu__contacts-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__list-socials list">
+        <li class="menu__item-socials">
+          <a href="#" class="link menu__socials-link">Instagram</a>
+        </li>
+        <li class="menu__item-socials">
+          <a href="#" class="link menu__socials-link">Twitter</a>
+        </li>
+        <li class="menu__item-socials">
+          <a href="#" class="link menu__socials-link">Facebook</a>
+        </li>
+        <li class="menu__item-socials">
+          <a href="#" class="link menu__socials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <!-- modal -->
     <script src="./js/modal.js"></script>
+    <!-- header menu -->
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
