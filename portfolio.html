@@ -69,7 +69,7 @@
           aria-controls="mobile-menu"
         >
           <svg width="40" height="40">
-            <use href="../img/icons.svg#open-menu"></use>
+            <use href="./img/icons.svg#open-menu"></use>
           </svg>
         </button>
       </div>
@@ -428,18 +428,16 @@
     </footer>
     <div class="menu__container js-menu-container" id="mobile-menu">
       <button class="menu__toggle js-close-menu">
-        <svg width="40" height="40">
-          <use href="/img/icons.svg#close-menu"></use>
+        <svg width="40" height="40" class="svg__menu">
+          <use href="./img/icons.svg#close-menu"></use>
         </svg>
       </button>
       <ul class="menu__list-nav list">
-        <li class="menu__item">
-          <a class="link menu__link" href="./index.html">Студія</a>
+        <li class="menu__item current">
+          <a class="link current menu__link" href="./index.html">Студія</a>
         </li>
         <li class="menu__item">
-          <a class="link menu__link current" href="./portfolio.html"
-            >Портфоліо</a
-          >
+          <a class="link menu__link" href="./portfolio.html">Портфоліо</a>
         </li>
         <li class="menu__item">
           <a class="link menu__link" href="#">Контакти</a>
