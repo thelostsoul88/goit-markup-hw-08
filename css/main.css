@@ -450,6 +450,13 @@ body {
   border: none;
 }
 
+.svg__menu:hover {
+  fill: var(--accent-color);
+}
+.svg__menu:focus {
+  fill: var(--accent-color);
+}
+
 .menu__list-nav {
   margin-bottom: auto;
   gap: 35px;
