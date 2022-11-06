@@ -1,6 +1,13 @@
 .mailing__form {
   display: flex;
-  align-items: flex-end;
+  @include media-max(1199px) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include media-min(1200px) {
+    align-items: flex-end;
+  }
 }
 .mailing__label {
   display: block;
@@ -13,10 +20,13 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
+  @include media-min(1200px) {
+    text-align: start;
+  }
 }
 .mailing__input {
-  width: 358px;
   height: 50px;
   color: var(--primary-white-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -25,6 +35,13 @@
   background: var(--bg-footer-color);
   padding-left: 16px;
   outline: transparent;
+  @include media-max(1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @include media-min(1200px) {
+    width: 358px;
+  }
   &::placeholder {
     padding-top: 15px;
     font-size: 16px;

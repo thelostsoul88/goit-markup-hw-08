@@ -1,8 +1,13 @@
 .join {
   max-width: 206px;
   max-height: 80px;
-  margin-left: 70px;
-  margin-right: 93px;
+  @include media-max(767px) {
+    margin-bottom: 60px;
+  }
+  @include media-min(1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .join__name {
   color: var(--primary-white-color);
@@ -10,8 +15,12 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @include media-min(1200px) {
+    text-align: start;
+  }
 }
 .join__list {
   .join__link {
