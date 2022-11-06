@@ -122,7 +122,7 @@ body {
           transition-timing-function: var(--primary-animation);
 }
 
-.modal__btn-close, .register__checkbox, .portfolio__list-btn, .mailing__btn, .join__link, .clients__link, .team__contacts-link, .features__container, .hero__button {
+.modal__btn-close, .register__checkbox, .portfolio__list-btn, .join__link, .clients__link, .team__contacts-link, .features__container, .hero__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,6 +1170,24 @@ address .link:focus {
   fill: var(--primary-white-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mailing {
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mailing {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .mailing__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1191,6 +1209,10 @@ address .link:focus {
 }
 @media screen and (min-width: 1200px) {
   .mailing__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -1199,7 +1221,17 @@ address .link:focus {
 
 .mailing__label {
   display: block;
-  margin-right: 12px;
+}
+@media screen and (max-width: 767px) {
+  .mailing__label {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing__label {
+    margin-right: 12px;
+  }
 }
 
 .mailing__text {
@@ -1227,18 +1259,8 @@ address .link:focus {
   border-radius: 4px;
   background: var(--bg-footer-color);
   padding-left: 16px;
+  margin-bottom: 20px;
   outline: transparent;
-}
-@media screen and (max-width: 1199px) {
-  .mailing__input {
-    width: 450px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .mailing__input {
-    width: 358px;
-  }
 }
 .mailing__input::-webkit-input-placeholder {
   padding-top: 15px;
@@ -1290,6 +1312,23 @@ address .link:focus {
           align-items: center;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 767px) {
+  .mailing__input {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mailing__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
 
 .mailing__btn {
   width: 200px;
@@ -1297,6 +1336,13 @@ address .link:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
