@@ -98,7 +98,7 @@
 
 .menu__contacts-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: var(--title-color);
@@ -108,14 +108,14 @@
   &:focus {
     color: var(--accent-color);
   }
-  @include media-min-max(320px, 479px) {
+  @include media-min(480px) {
     font-size: 28px;
   }
 }
 
 .menu__contacts-mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 5vw;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: var(--title-color);
@@ -125,13 +125,14 @@
   &:focus {
     color: var(--accent-color);
   }
-  @include media-min-max(320px, 479px) {
+  @include media-min(480px) {
     font-size: 28px;
   }
 }
 
 .menu__list-socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu__item-socials:not(:last-child) {
