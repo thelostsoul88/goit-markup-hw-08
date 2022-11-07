@@ -1,13 +1,20 @@
 .portfolio__list-btn {
-  @extend %flex-jc-ac;
+  display: flex;
   gap: 8px;
   margin-bottom: 50px;
+  @include media-max(767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @include media-min(767px) {
+    justify-content: center;
+  }
 }
 .portfolio__item-btn {
   background-color: var(--button-bg-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: calc(26 / 16);
   align-items: center;
   text-align: center;
   border-radius: 4px;

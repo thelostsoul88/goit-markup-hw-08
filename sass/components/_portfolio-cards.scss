@@ -1,9 +1,21 @@
 .portfolio__list-card {
+  display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  padding-inline-start: 0px;
 }
 .portfolio__item-card {
-  flex-basis: calc(100% / 3 - 30px);
+  display: flex;
+  justify-content: center;
+  @include calc(1);
+  @include media-min(768px) {
+    @include calc(2);
+  }
+  @include media-min(1200px) {
+    @include calc(3);
+  }
 }
+
 .portfolio__discription-txt {
   position: absolute;
   transform: translateY(100%);
@@ -18,7 +30,10 @@
   transition-duration: 250ms;
   transition-timing-function: var(--primary-animation);
 }
+
 .portfolio__link-card {
+  width: 450px;
+  height: 404px;
   display: block;
   color: var(--primary-black-color);
   transition-property: box-shadow;
@@ -38,6 +53,12 @@
       background-color: rgba(33, 150, 243, 0.9);
       transform: translateY(0);
     }
+  }
+  @include media-min(768px) {
+    width: 354px;
+  }
+  @include media-min(1200px) {
+    width: 370px;
   }
 }
 .portfolio__discription {

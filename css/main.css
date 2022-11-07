@@ -122,7 +122,7 @@ body {
           transition-timing-function: var(--primary-animation);
 }
 
-.modal__btn-close, .register__checkbox, .portfolio__list-btn, .join__link, .clients__link, .team__contacts-link, .features__container, .hero__button {
+.modal__btn-close, .register__checkbox, .join__link, .clients__link, .team__contacts-link, .features__container, .hero__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1367,15 +1367,34 @@ address .link:focus {
 }
 
 .portfolio__list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__list-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 767px) {
+  .portfolio__list-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio__item-btn {
   background-color: var(--button-bg-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1425,13 +1444,34 @@ address .link:focus {
 }
 
 .portfolio__list-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .portfolio__item-card {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc((100% - 0px) / 1);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item-card {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio__discription-txt {
@@ -1457,6 +1497,8 @@ address .link:focus {
 }
 
 .portfolio__link-card {
+  width: 450px;
+  height: 404px;
   display: block;
   color: var(--primary-black-color);
   -webkit-transition-property: -webkit-box-shadow;
@@ -1481,6 +1523,16 @@ address .link:focus {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__link-card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__link-card {
+    width: 370px;
+  }
 }
 
 .portfolio__discription {
