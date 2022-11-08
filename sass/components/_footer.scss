@@ -20,11 +20,10 @@
     align-items: center;
     flex-direction: column;
   }
-  @include media-min(768px) {
+  @include media-min-max(768px, 1199px) {
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
   }
   @include media-min(1200px) {
     align-items: baseline;
@@ -35,7 +34,7 @@
   text-align: center;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 96px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
@@ -44,7 +43,7 @@
 }
 
 .footer__logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 700;
