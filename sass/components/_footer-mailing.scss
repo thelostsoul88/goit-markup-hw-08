@@ -7,9 +7,6 @@
   @include media-max(767px) {
     width: 100%;
   }
-  @include media-min(1200px) {
-    display: flex;
-  }
 }
 
 .mailing__form {
@@ -39,7 +36,6 @@
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   text-align: center;

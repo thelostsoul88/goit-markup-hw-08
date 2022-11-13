@@ -67,7 +67,6 @@
 .register__checkbox {
   @extend %flex-jc-ac;
   margin-bottom: 30px;
-  font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--title-color);
   user-select: none;
