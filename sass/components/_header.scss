@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   border-bottom: 1px solid #ececec;
   @include media-max(767px) {
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .logo {
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -33,7 +33,7 @@
 
 .logo {
   span {
-    color: var(--primary-black-color);
+    color: $primary-black-color;
   }
 }
 
@@ -57,7 +57,7 @@
 
 .nav__list {
   .link {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -81,10 +81,10 @@
 .nav__list {
   .link {
     &:hover {
-      color: var(--accent-color);
+      color: $accent-color;
     }
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
@@ -101,7 +101,7 @@
     content: "";
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
     bottom: -1px;
     @include media-max(767px) {
@@ -112,7 +112,7 @@
 
 .header {
   .current {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -147,7 +147,7 @@
 }
 .contacts__link {
   .contacts__icon {
-    fill: var(--title-color);
+    fill: $title-color;
     margin-right: 10px;
     transition-property: fill;
     @extend %animation;
@@ -156,7 +156,7 @@
 
 .header__mail {
   margin-right: 50px;
-  color: var(--title-color);
+  color: $title-color;
   @include media-min(768px) {
     margin-right: 0;
     margin-bottom: 10px;
@@ -164,7 +164,7 @@
 }
 
 .header__tel {
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .contacts__link {
@@ -174,17 +174,17 @@
 
 .contacts__list {
   .link {
-    color: var(--title-color);
+    color: $title-color;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition-property: color;
     @extend %animation;
     &:hover {
-      color: var(--accent-color);
+      color: $accent-color;
     }
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }

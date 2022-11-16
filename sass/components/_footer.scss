@@ -1,15 +1,15 @@
 .footer {
   width: 100%;
-  background-color: var(--bg-footer-color);
+  background-color: $bg-footer-color;
   padding-top: 60px;
   padding-bottom: 60px;
   .address__link-mail {
-    color: var(--address-footer);
+    color: $address-footer;
     transition-property: color;
     @extend %animation;
   }
   .address__link-tel {
-    color: var(--address-footer);
+    color: $address-footer;
     transition-property: color;
     @extend %animation;
   }
@@ -43,8 +43,8 @@
 }
 
 .footer__logo {
-  font-family: 'Raleway';
-  color: var(--accent-color);
+  font-family: "Raleway";
+  color: $accent-color;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -59,7 +59,7 @@
 
 .footer__logo {
   .studio {
-    color: var(--primary-white-color);
+    color: $primary-white-color;
   }
 }
 
@@ -82,15 +82,15 @@
 address {
   .link {
     &:hover {
-      color: var(--accent-color);
+      color: $accent-color;
     }
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
 .addres__link-google {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   transition-property: color;
   @extend %animation;
 }

@@ -26,7 +26,7 @@
 .clients__link {
   @extend %flex-jc-ac;
   height: 92px;
-  border: 1px solid var(--clients-color);
+  border: 1px solid $clients-color;
   border-radius: 4px;
   transition-property: border-color;
   @extend %animation;
@@ -39,19 +39,19 @@
     height: 92px;
   }
   &:hover {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     .client__icon {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     .client__icon {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
   .client__icon {
-    fill: var(--clients-color);
+    fill: $clients-color;
     transition-property: fill;
     @extend %animation;
   }

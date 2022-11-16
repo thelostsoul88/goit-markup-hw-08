@@ -16,7 +16,7 @@
     }
   }
   .features__text {
-    color: var(--title-color);
+    color: $title-color;
     line-height: calc(24 / 14);
     max-width: 450px;
     height: 50px;
@@ -43,7 +43,7 @@
   @extend %flex-jc-ac;
   max-width: 450px;
   height: 120px;
-  background: var(--bg-empl);
+  background: $bg-empl;
   border-radius: 4px;
   margin-bottom: 30px;
   @include media-min(768px) {

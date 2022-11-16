@@ -26,15 +26,15 @@
   font-size: 18px;
   line-height: calc(28 / 18);
   padding: 63px 24px;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   transition-property: background-color, transform;
   transition-duration: 250ms;
-  transition-timing-function: var(--primary-animation);
+  transition-timing-function: $primary-animation;
 }
 
 .portfolio__link-card {
   display: block;
-  color: var(--primary-black-color);
+  color: $primary-black-color;
   transition-property: box-shadow;
   @extend %animation;
   &:hover {
@@ -84,7 +84,7 @@
   margin-bottom: 4px;
 }
 .portfolio__text-card {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 16px;
   line-height: 1.87;
 }

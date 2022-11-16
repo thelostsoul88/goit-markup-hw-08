@@ -1,6 +1,6 @@
 %animation {
   transition-duration: 250ms;
-  transition-timing-function: var(--primary-animation);
+  transition-timing-function: $primary-animation;
 }
 
 %flex-jc-ac {

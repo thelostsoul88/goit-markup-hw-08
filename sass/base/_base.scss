@@ -1,7 +1,7 @@
 body {
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   font-family: "Roboto", sans-serif;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 14px;
   letter-spacing: 0.03em;
 }

@@ -16,21 +16,21 @@
   @extend %animation;
   &:hover {
     .team__contacts-icon {
-      fill: var(--primary-white-color);
+      fill: $primary-white-color;
     }
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 100%;
   }
   &:focus {
     .team__contacts-icon {
-      fill: var(--primary-white-color);
+      fill: $primary-white-color;
     }
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 100%;
   }
 }
 .team__contacts-icon {
-  fill: var(--clients-color);
+  fill: $clients-color;
   transition-property: fill;
   @extend %animation;
 }
