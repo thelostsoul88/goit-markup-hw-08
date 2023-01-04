@@ -1712,6 +1712,7 @@ address .link:focus {
 }
 .register__input-checkbox:checked + .register__checkbox-icon .register__check-use {
   fill: #2196f3;
+  opacity: 1;
 }
 
 .register__txt-sbmt {
@@ -1755,7 +1756,8 @@ address .link:focus {
 }
 
 .register__check-use {
-  fill: transparent;
+  opacity: 0;
+  fill: transparnt;
   -webkit-transition-property: fill;
   transition-property: fill;
 }
